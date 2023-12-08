@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".PlayerActivity">
+
+        <androidx.media3.ui.PlayerView
+            android:id="@+id/playerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:controller_layout_id="@layout/player_control_view"
+            app:resize_mode="fill"
+            app:show_timeout="5000"
+            app:surface_type="surface_view"
+            app:unplayed_color="@color/white"
+            app:use_controller="true" />
+
+        <androidx.media3.ui.PlayerControlView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <com.sweta.marriage.SpecialGift
+            android:id="@+id/gift"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:onTheDayOf="28 Nov 2023, Tue"
+            app:cheersTo="Your happily ever after"
+            app:bestWishesFrom="Satyaranjan Dalai" />
+
+
+    </FrameLayout>
+</layout>
